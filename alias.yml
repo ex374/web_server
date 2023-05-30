@@ -8,9 +8,4 @@
       template:
         src: alias.temp.j2
         dest: /var/www/html/index.html
-      notify: restart service
-  handlers:
-    - name: restart service
-      service:
-       name: httpd 
-       state: restarted 
+    
